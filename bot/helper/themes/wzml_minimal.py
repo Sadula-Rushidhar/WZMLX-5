@@ -109,7 +109,7 @@ class WZMLStyle:
     L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<code>{Name}</code>\n┃\n'
+    NAME =                  '<b><i>{Name}</i></b>\n┃\n'
     SIZE =                  '┠ <b>Size: </b>{Size}\n'
     ELAPSE =                '┠ <b>Elapsed: </b>{Time}\n'
     MODE =                  '┠ <b>Mode: </b>{Mode}\n'
@@ -146,7 +146,7 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>\n'
+    STATUS_NAME =       '<code>{Name}</code>\n'
 
     #####---------PROGRESSIVE STATUS-------
     BAR =               '\n┎ {Bar}'
@@ -179,7 +179,7 @@ class WZMLStyle:
     CANCEL =         '\n┖ <code>{Cancel}</code>\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
+    FOOTER = '┎ <b><i>Bot Stats</i></b>\n'
     TASKS =  '┠ <b>Tasks:</b> {Tasks}\n'
     BOT_TASKS = '┠ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
     Cpu = '┠ <b>CPU:</b> {cpu}% | '
