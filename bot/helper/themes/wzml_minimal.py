@@ -13,7 +13,7 @@ class WZMLStyle:
     # ---------------------
 
     # async def stats(client, message):
-    BOT_STATS = '''⌬ <b><i>BOT STATISTICS :</i></b>
+    BOT_STATS = '''┎ <b><i>BOT STATISTICS :</i></b>
 ┖ <b>Bot Uptime :</b> {bot_uptime}
 
 ┎ <b><i>RAM ( MEMORY ) :</i></b>
@@ -31,12 +31,12 @@ class WZMLStyle:
 ┖ <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
     
     '''
-    SYS_STATS = '''⌬ <b><i>OS SYSTEM :</i></b>
+┎   SYS_STATS = '''┎ <b><i>OS SYSTEM :</i></b>
 ┠ <b>OS Uptime :</b> {os_uptime}
 ┠ <b>OS Version :</b> {os_version}
 ┖ <b>OS Arch :</b> {os_arch}
 
-⌬ <b><i>NETWORK STATS :</i></b>
+┎ <b><i>NETWORK STATS :</i></b>
 ┠ <b>Upload Data:</b> {up_data}
 ┠ <b>Download Data:</b> {dl_data}
 ┠ <b>Pkts Sent:</b> {pkt_sent}k
@@ -51,15 +51,15 @@ class WZMLStyle:
 ┠ <b>Total Core(s) :</b> {total_core}
 ┖ <b>Usable CPU(s) :</b> {cpu_use}
     '''
-    REPO_STATS = '''⌬ <b><i>REPO STATISTICS :</i></b>
+    REPO_STATS = '''┎ <b><i>REPO STATISTICS :</i></b>
 ┠ <b>Bot Updated :</b> {last_commit}
 ┠ <b>Current Version :</b> {bot_version}
 ┠ <b>Latest Version :</b> {lat_version}
 ┖ <b>Last ChangeLog :</b> {commit_details}
 
-⌬ <b>REMARKS :</b> <code>{remarks}</code>
+┎ <b>REMARKS :</b> <code>{remarks}</code>
     '''
-    BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
+    BOT_LIMITS = '''┎ <b><i>BOT LIMITATIONS :</i></b>
 ┠ <b>Direct Limit :</b> {DL} GB
 ┠ <b>Torrent Limit :</b> {TL} GB
 ┠ <b>GDrive Limit :</b> {GL} GB
@@ -81,7 +81,7 @@ class WZMLStyle:
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully!</i></b>
+    RESTART_SUCCESS = '''┎ <b><i>Restarted Successfully!</i></b>
 ┠ <b>Date:</b> {date}
 ┠ <b>Time:</b> {time}
 ┠ <b>TimeZone:</b> {timz}
@@ -109,7 +109,7 @@ class WZMLStyle:
     L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b><i>{Name}</i></b>\n┃\n'
+    NAME =                  '<code><i>{Name}</i></code>\n┃\n'
     SIZE =                  '┠ <b>Size: </b>{Size}\n'
     ELAPSE =                '┠ <b>Elapsed: </b>{Time}\n'
     MODE =                  '┠ <b>Mode: </b>{Mode}\n'
@@ -149,7 +149,7 @@ class WZMLStyle:
     STATUS_NAME =       '<b><i>{Name}</i></b>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n┃ {Bar}'
+    BAR =               '\n┎ {Bar}'
     PROCESSED =         '\n┠ <b>Processed:</b> {Processed}'
     STATUS =            '\n┠ <b>Status:</b> <a href="{Url}">{Status}</a>'
     ETA =                                                ' | <b>ETA:</b> {Eta}'
@@ -173,13 +173,13 @@ class WZMLStyle:
     NON_ENGINE =     '\n┠ <b>Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n┠ <b>User:</b> <code>{User}</code> | '
-    ID =                                                        '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =          '\n┠ <b>Select:</b> {Btsel}'
-    CANCEL =         '\n┖ {Cancel}\n\n'
+    USER =              '\n┠ <b>User:</b> <code>{User}</code> \n'
+    ID =                                                        '<b>┠ ID:</b> <code>{Id}</code>'
+    BTSEL =          '\n┠ <b>Select:</b> <code>{Btsel}</code>'
+    CANCEL =         '\n┖ <code>{Cancel}</code>\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
+    FOOTER = '┎ <b><i>Bot Stats</i></b>\n'
     TASKS =  '┠ <b>Tasks:</b> {Tasks}\n'
     BOT_TASKS = '┠ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
     Cpu = '┠ <b>CPU:</b> {cpu}% | '
@@ -218,7 +218,7 @@ class WZMLStyle:
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
     
-⌬ <b><i>Bot Stats</i></b>
+┎ <b><i>Bot Stats</i></b>
 ┠ <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 ┖ <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
     '''
