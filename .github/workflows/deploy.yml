@@ -1,0 +1,21 @@
+name: Manually Deploy to Heroku L
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: "dee60b17-cc7a-42d5-b11d-e50de2b47da6"
+          heroku_app_name: "mirror-201-rushi"
+          heroku_email: "sadulalook+6@proton.me"
+
+          usedocker: true
+          docker_heroku_process_type: web
+          stack: "container"
+          region: "eu"
+        env:
+          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
