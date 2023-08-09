@@ -173,7 +173,7 @@ class WZMLStyle:
     NON_ENGINE =     '\n┠ <b>Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n┠ <b>User:</b> <code>{User}</code>\n'
+    USER =              '\n┠ <b>User:</b> <b>{User}</b>\n'
     ID =                                                        '<b>┠ ID:</b> <code>{Id}</code>'
     BTSEL =          '\n┠ <b>Select:</b> <code>{Btsel}</code>'
     CANCEL =         '\n┖ <code>{Cancel}</code>\n\n'
@@ -191,7 +191,7 @@ class WZMLStyle:
 
     ###--------BUTTONS-------
     PREVIOUS = '⫷'
-    REFRESH = 'ᴘᴀɢᴇs\n{Page}'
+    REFRESH = 'Refresh\n{Page}'
     NEXT = '⫸'
     # ---------------------
 
