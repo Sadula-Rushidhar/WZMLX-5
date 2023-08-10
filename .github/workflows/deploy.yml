@@ -10,7 +10,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: "dee60b17-cc7a-42d5-b11d-e50de2b47da6"
-          heroku_app_name: "mirror-201-rushi"
+          heroku_app_name: "mirror-551-rushi"
           heroku_email: "sadulalook+6@proton.me"
 
           usedocker: true
